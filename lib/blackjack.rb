@@ -46,6 +46,7 @@ def hit?(number)
  end
  elsif player_input != 's'
    invalid_command
+   prompt_user
  end
  
  
