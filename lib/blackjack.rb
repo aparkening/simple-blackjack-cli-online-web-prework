@@ -3,8 +3,18 @@ def welcome
   puts "Welcome to the Blackjack Table"
 end
 
+# Gnerates a random card between 1-11
 def deal_card
-  # code #deal_card here
+  
+  
+  
+    it "ge" do
+    20.times do 
+      card = deal_card
+      expect(card).to be > 0
+      expect(card).to be < 12
+    end
+  
 end
 
 def display_card_total
