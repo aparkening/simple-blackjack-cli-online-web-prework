@@ -59,8 +59,12 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-#
+# Run methods above
 def runner
-  # code runner here
+  calls on the #welcome method, 
+  then on the #initial_round method, 
+  then calls #hit? and #display_card_total methods
+  -until- the card sum is greater than 21,
+  then calls on the #end_game method"
 end
     
