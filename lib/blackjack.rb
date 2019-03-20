@@ -5,7 +5,7 @@ end
 
 # Generates a random card between 1-11
 def deal_card
-  
+  rand(1..11)
   
       card = deal_card
       expect(card).to be > 0
