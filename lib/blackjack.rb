@@ -20,10 +20,7 @@ end
 
 # Return the value of a `gets.chomp` method
 def get_user_input
-  
-    ["h", "s", "exit"].each do |string|
-      expect(self).to receive(:gets).and_return(string)
-      expect(get_user_input).to eq(string)
+  return gets.chomp
 end
 
 def end_game
