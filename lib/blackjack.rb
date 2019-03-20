@@ -59,17 +59,16 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
-# Run methods above until player loses
+# Run methods above until player's total exceeds 21
 def runner
   welcome
   
-  
-  current_total = initial_round
-  current_total = hit?(current_total)
-  display_card_total(current_total)
-  
-  
-  -until- the card sum is greater than 21,
-  then calls on the #end_game method"
+  until current_total > 21
+    current_total = initial_round
+    current_total = hit?(current_total)
+    display_card_total(current_total)
+  end
+
+  end_game  
 end
     
