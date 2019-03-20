@@ -18,8 +18,12 @@ def prompt_user
   puts "Type 'h' to hit or 's' to stay"
 end
 
+# Return the value of a `gets.chomp` method
 def get_user_input
-  # code #get_user_input here
+  
+    ["h", "s", "exit"].each do |string|
+      expect(self).to receive(:gets).and_return(string)
+      expect(get_user_input).to eq(string)
 end
 
 def end_game
