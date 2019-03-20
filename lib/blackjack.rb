@@ -43,7 +43,6 @@ def hit?(current_total)
  player_input = get_user_input
  if player_input == 'h'
    current_total = current_total + deal_card
- end
  elsif player_input != 's'
    invalid_command
    prompt_user
