@@ -69,6 +69,6 @@ def runner
     display_card_total(current_total)
   end
 
-  end_game(21)
+  end_game(current_total)
 end
     
