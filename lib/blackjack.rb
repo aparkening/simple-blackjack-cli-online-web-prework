@@ -37,7 +37,7 @@ def initial_round
   return sum
 end
 
-# Take an argument of player's current card total
+# Add to current total if hit requested. Do nothing if stay is requested. Prompt for invalid command if neither hit nore stay is input.
 def hit?(current_total)
  prompt_user
  player_input = get_user_input
@@ -50,6 +50,7 @@ def hit?(current_total)
  return current_total
 end
 
+# Ouput invalid command phrase
 def invalid_command
   puts "Please enter a valid command"
 end
@@ -58,6 +59,7 @@ end
 # get every test to pass before coding runner below #
 #####################################################
 
+#
 def runner
   # code runner here
 end
