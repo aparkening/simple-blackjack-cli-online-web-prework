@@ -1,5 +1,6 @@
+# Prints welcome message to screen
 def welcome
-  # code #welcome here
+  Welcome to the Blackjack Table
 end
 
 def deal_card
