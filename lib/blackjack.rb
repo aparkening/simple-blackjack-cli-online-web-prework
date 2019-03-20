@@ -8,8 +8,25 @@ def deal_card
   rand(1..11)
 end
 
+# Accepts a number argument and outputs phrase with total
 def display_card_total
   # code #display_card_total here
+  
+  
+    it "accepts one argument, the card total" do
+    expect { display_card_total(7) }.to_not raise_error
+  end
+
+  it "prints the value of the cards to the screen" do
+    expect($stdout).to receive(:puts).with("Your cards add up to 8")
+    display_card_total(8)
+  end
+
+  it "does not hardcode the card total" do
+    expect($stdout).to receive(:puts).with("Your cards add up to 12")
+    display_card_total(12)
+  end
+  
 end
 
 def prompt_user
