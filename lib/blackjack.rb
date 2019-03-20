@@ -30,8 +30,11 @@ end
 
 # Call on #deal_card twice and return the sum via #display_card_total
 def initial_round
+  first = deal_card
+  second = deal_card
+  sum = first + second
+  display_card_total(sum)
   
-  deal_card
     expect(self).to receive(:deal_card).at_least(:twice).and_return(6)
     expect(initial_round).to eq(12)
   end
