@@ -23,8 +23,9 @@ def get_user_input
   return gets.chomp
 end
 
-def end_game
-  # code #end_game here
+# Prints apology, card total, and thank you message
+def end_game(number)
+  puts "Sorry, you hit #{number}. Thanks for playing!"
 end
 
 def initial_round
