@@ -1,21 +1,21 @@
-# Prints welcome message to screen
+# Print welcome message to screen
 def welcome
   puts "Welcome to the Blackjack Table"
 end
 
-# Generates a random card between 1-11
+# Generate a random card between 1-11
 def deal_card
   rand(1..11)
 end
 
-# Accepts a number argument and outputs phrase with total
+# Accept a number argument and output phrase with total
 def display_card_total(number)
   puts "Your cards add up to #{number}"
 end
 
-
+# Output instructions for hitting or staying
 def prompt_user
-  # code #prompt_user here
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
