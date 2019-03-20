@@ -39,6 +39,38 @@ end
 
 # Take an argument of player's current card total
 def hit?(number)
+ prompt_user
+ player_input = get_user_input
+ if player_input == 's'
+   
+ end
+ if player_input == 'h'
+   total = deal_card
+   
+ end
+ elsif player_input != 's'
+   invalid_command
+ end
+ 
+ 
+ 
+
+  it "returns an integer which is the card total" do
+    expect(self).to receive(:get_user_input).and_return("s")
+    expect(hit?(20)).to eq(20)
+  end
+
+  it "does not deal another card if user types 's'" do
+    expect(self).to receive(:get_user_input).and_return("s")
+    expect(hit?(7)).to eq(7)
+  end
+
+  it "deals another card when user types 'h'" do
+    expect(self).to receive(:get_user_input).and_return("h")
+    expect(self).to receive(:deal_card).and_return(7)
+    expect(hit?(7)).to eq(14)
+  end
+ 
  
 end
 
